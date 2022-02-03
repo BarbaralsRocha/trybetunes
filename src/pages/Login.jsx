@@ -4,12 +4,12 @@ import { createUser } from '../services/userAPI';
 import Loading from '../components/Loading';
 
 export default class Login extends React.Component {
-  state = {
-    loginName: '',
-    getLogin: false,
-    dissableButton: true,
-    loading: false,
-  };
+ state = {
+   loginName: '',
+   getLogin: false,
+   dissableButton: true,
+   loading: false,
+ };
 
   handleChange = ({ target }) => {
     const MIN_INPUT = 3;
@@ -23,7 +23,7 @@ export default class Login extends React.Component {
   }
 
   buttonCLick = async () => {
-    const { loginName, getLogin, loading } = this.state;
+    const { loginName } = this.state;
     this.setState({ loading: true });
     await createUser({ name: loginName });
     this.setState({
