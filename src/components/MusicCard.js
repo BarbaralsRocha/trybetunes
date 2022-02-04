@@ -12,7 +12,9 @@ export default class MusicCards extends React.Component {
     async componentDidMount() {
       const { trackId } = this.props;
       const favoriteSong = await getFavoriteSongs();
-      const favoriteChecked = favoriteSong.find((favorite) => favorite.trackId === trackId);
+      const favoriteChecked = favoriteSong.find((favorite) => (
+        favorite.trackId === trackId
+      ));
       if (favoriteChecked) {
         this.setState({ checked: true });
       }
