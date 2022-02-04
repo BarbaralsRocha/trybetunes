@@ -30,7 +30,6 @@ export default class Search extends React.Component {
        loading: true,
      });
      const albunsSearch = await searchAlbumsAPIs(search);
-     console.log(albunsSearch);
      this.setState({
        artist: search,
        search: '',
