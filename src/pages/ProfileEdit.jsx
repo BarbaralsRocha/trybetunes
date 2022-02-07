@@ -7,6 +7,9 @@ export default class ProfileEdit extends React.Component {
       <div data-testid="page-profile-edit">
         <Header />
         <h1>Editar Profile</h1>
+        {/* <label htmlFor='name'>
+        <input type="text" name="name"/>
+        </label> */}
       </div>
     );
   }
