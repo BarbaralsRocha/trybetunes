@@ -27,10 +27,10 @@ export default class Profile extends React.Component {
           loading ? <Loading />
             : (
               <div>
-                <h1>Profile</h1>
+                <h1>Editar Perfil</h1>
                 <img
                   data-testid="profile-image"
-                  src={ userLogin.image }
+                  src="url-to-image"
                   alt={ userLogin.name }
                 />
                 <p>Nome:</p>
